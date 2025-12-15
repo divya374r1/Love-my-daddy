@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>For My Dad</title>
+    <title>Love My Dad</title>
     <style>
         body {
-            background-color: #fff0f5;
+            background-color: #fce4ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
             text-align: center;
-            font-family: Arial;
-            padding-top: 50px;
+            animation: fadeUp 2s ease-in-out;
         }
+
         h1 {
-            color: #d63384;
-            font-size: 36px;
+            color: #d81b60;
+            font-size: 40px;
         }
-        p {
-            font-size: 20px;
+
+        .heart {
+            font-size: 50px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
         }
     </style>
 </head>
 <body>
-
-    <h1>I ❤️ Love My Dad</h1>
-    <p>You are my hero.</p>
-    <p>Thank you for everything.</p>
-
+    <div class="box">
+        <h1>I Love My Dad</h1>
+        <div class="heart">❤️</div>
+        <p>You are my hero.</p>
+    </div>
 </body>
 </html>
+
 
